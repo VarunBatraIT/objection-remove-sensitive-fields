@@ -1,16 +1,15 @@
 module.exports = (Model) => {
   return class extends Model {
-    // Class should have public sensitiveFields which will be removed
+    // Class should have static sensitiveFields which will be removed
     toJSON(opt){
       const json = super.toJSON(opt);
-      if(Array.isArray(this.sensitiveFields)){
-        for (const value of this.sensitiveFields) {
+      const sensitiveFields = this.constructor.sensitiveFields;
+      if(Array.isArray(sensitiveFields)){
+        for (const value of sensitiveFields) {
           if(typeof json[value] !== "undefined"){
             delete json[value]
           }
         }
-        // removes itself from model json
-        delete json['sensitiveFields']
       }
       return json
     }

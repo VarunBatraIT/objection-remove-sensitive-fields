@@ -1,6 +1,6 @@
 {
   "name": "objection-remove-sensitive-fields",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hide sensitive fields in objection when json is responded through api",
   "main": "index.js",
   "scripts": {

@@ -11,7 +11,7 @@ const { Model, mixin } = require('objection')
 const RemoveSensitiveFields = require('objection-remove-sensitive-fields')
 
 class User extends mixin(Model, [RemoveSensitiveFields]) {
-  sensitiveFields = ['salt','password']
+  static sensitiveFields = ['salt','password']
 }
 
 
