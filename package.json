@@ -1,0 +1,25 @@
+{
+  "name": "objection-remove-sensitive-fields",
+  "version": "1.0.0",
+  "description": "Hide sensitive fields in objection when json is responded through api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VarunBatraIT/objection-remove-sensitive-fields.git"
+  },
+  "keywords": [
+    "objection",
+    "mixin",
+    "hide",
+    "sensitive"
+  ],
+  "author": "Varun Batra <codevarun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VarunBatraIT/objection-remove-sensitive-fields/issues"
+  },
+  "homepage": "https://github.com/VarunBatraIT/objection-remove-sensitive-fields#readme"
+}
